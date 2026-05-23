@@ -21,6 +21,6 @@ Three independent microservices communicating over HTTP:
 
 ## Run Locally With Docker
 
-git clone https://github.com/Akioye/ecommerce-platform
-cd ecommerce-platform
-docker compose up --build
+- git clone https://github.com/Akioye/ecommerce-platform
+- cd ecommerce-platform
+- docker compose up --build
