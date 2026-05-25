@@ -1,0 +1,17 @@
+inventoryService:
+  name: inventory-service
+  image: "524178179037.dkr.ecr.us-east-1.amazonaws.com/inventory-service:latest"
+  port: 8001
+  replicas: 1
+
+cartService:
+  name: cart-service
+  image: "524178179037.dkr.ecr.us-east-1.amazonaws.com/cart-service:latest"
+  port: 8002
+  replicas: 1
+
+paymentService:
+  name: payment-service
+  image: "524178179037.dkr.ecr.us-east-1.amazonaws.com/payment-service:latest"
+  port: 8003
+  replicas: 1

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.inventoryService.name }}
+spec:
+  replicas: {{ .Values.inventoryService.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.inventoryService.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.inventoryService.name }}
+    spec:
+      containers:
+        - name: {{ .Values.inventoryService.name }}
+          image: {{ .Values.inventoryService.image }}
+          ports:
+            - containerPort: {{ .Values.inventoryService.port }}
+          env:
+            - name: PORT
+              value: "{{ .Values.inventoryService.port }}"

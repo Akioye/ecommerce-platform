@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.cartService.name }}
+spec:
+  replicas: {{ .Values.cartService.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.cartService.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.cartService.name }}
+    spec:
+      containers:
+        - name: {{ .Values.cartService.name }}
+          image: {{ .Values.cartService.image }}
+          ports:
+            - containerPort: {{ .Values.cartService.port }}
+          env:
+            - name: PORT
+              value: "{{ .Values.cartService.port }}"
+            - name: INVENTORY_SERVICE_URL
+              value: "http://inventory-service:8001"

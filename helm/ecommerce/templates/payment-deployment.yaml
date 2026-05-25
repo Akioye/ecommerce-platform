@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.paymentService.name }}
+spec:
+  replicas: {{ .Values.paymentService.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.paymentService.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.paymentService.name }}
+    spec:
+      containers:
+        - name: {{ .Values.paymentService.name }}
+          image: {{ .Values.paymentService.image }}
+          ports:
+            - containerPort: {{ .Values.paymentService.port }}
+          env:
+            - name: PORT
+              value: "{{ .Values.paymentService.port }}"
+            - name: INVENTORY_SERVICE_URL
+              value: "http://inventory-service:8001"
+            - name: CART_SERVICE_URL
+              value: "http://cart-service:8002"
