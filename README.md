@@ -3,12 +3,9 @@
 A production-grade microservices application with self-healing 
 infrastructure on AWS EKS.
 
-## Architecture
+## Architecture Diagram
 
-Three independent microservices communicating over HTTP:
-- **Inventory Service** (port 8001) — manages product stock levels
-- **Cart Service** (port 8002) — handles user carts, validates stock before adding items
-- **Payment Service** (port 8003) — orchestrates checkout, reduces stock, clears cart, records orders
+![Architecture](self-healing-project-architecture.png)
 
 ## Tech Stack
 
