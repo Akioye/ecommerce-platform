@@ -138,3 +138,51 @@ resource "aws_route_table_association" "private_2" {
   subnet_id      = aws_subnet.private_2.id
   route_table_id = aws_route_table.private.id
 }
+
+# Security group for bastion host
+resource "aws_security_group" "bastion" {
+  name        = "bastion-sg"
+  description = "Security group for bastion host"
+  vpc_id      = aws_vpc.main.id
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "bastion-sg"
+  }
+}
+
+
+
+
+
+resource "aws_instance" "bastion" {
+  ami                         = "ami-0453ec754f44f9a4a"
+  instance_type               = "t3.micro"
+  subnet_id                   = aws_subnet.public_1.id
+  vpc_security_group_ids      = [aws_security_group.bastion.id]
+  key_name                    = aws_key_pair.bastion.key_name
+  associate_public_ip_address = true
+
+  tags = {
+    Name = "ecommerce-bastion"
+  }
+}
+
+# Key pair for SSH access   
+resource "aws_key_pair" "bastion" {
+  key_name   = "ecommerce-bastion-key"
+  public_key = file("C:\\Users\\1040 G8\\.ssh\\id_rsa.pub")
+}

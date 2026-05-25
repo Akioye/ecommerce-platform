@@ -113,6 +113,7 @@ instance_types = ["t3.small"]
 resource "aws_ecr_repository" "inventory" {
   name                 = "inventory-service"
   image_tag_mutability = "MUTABLE"
+  force_delete         = true
 
   tags = {
     Name = "inventory-service"
@@ -122,6 +123,7 @@ resource "aws_ecr_repository" "inventory" {
 resource "aws_ecr_repository" "cart" {
   name                 = "cart-service"
   image_tag_mutability = "MUTABLE"
+  force_delete         = true
 
   tags = {
     Name = "cart-service"
@@ -131,6 +133,7 @@ resource "aws_ecr_repository" "cart" {
 resource "aws_ecr_repository" "payment" {
   name                 = "payment-service"
   image_tag_mutability = "MUTABLE"
+  force_delete         = true
 
   tags = {
     Name = "payment-service"

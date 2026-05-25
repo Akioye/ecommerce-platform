@@ -1,0 +1,51 @@
+---
+- name: Configure Bastion Host
+  hosts: bastion
+  become: yes
+
+  tasks:
+    - name: Update all packages
+      yum:
+        name: "*"
+        state: latest
+
+    - name: Install required tools
+      yum:
+        name:
+          - git
+          - wget
+          - unzip
+          - htop
+        state: present
+
+    - name: Install kubectl
+      shell: |
+        curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+        chmod +x kubectl
+        mv kubectl /usr/local/bin/kubectl
+      args:
+        creates: /usr/local/bin/kubectl
+
+    - name: Install AWS CLI
+      shell: |
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        ./aws/install
+      args:
+        creates: /usr/local/bin/aws
+
+    - name: Create banner message
+      copy:
+        content: |
+          ############################################
+          #     Ecommerce Platform Bastion Host      #
+          #     Authorized Access Only               #
+          ############################################
+        dest: /etc/motd
+        mode: '0644'
+
+    - name: Ensure SSH service is running
+      service:
+        name: sshd
+        state: started
+        enabled: yes
