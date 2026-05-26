@@ -6,7 +6,7 @@ infrastructure on AWS EKS.
 
 ## Architecture Diagram
 <p align="center">
-    <img src="self-healing-project-architecture.png" width="700" alt="Project Demo"/>
+    <img src="self-healing-project-architecture.png" width="700" alt="self-healing-project-architecture.png"/>
   </a>
 </p>
 
@@ -40,31 +40,31 @@ This platform demonstrates Kubernetes self-healing in real time.
 
 ### Grafana Live Monitoring
 <p align="center">
-    <img src="screenshots/grafana-inventory.png" width="700" alt="Project Demo"/>
+    <img src="screenshots/grafana-inventory.png" width="700" alt="grafana-inventory.png"/>
   </a>
 </p>
 
 <p align="center">
-    <img src="screenshots/grafana-cart.png" width="700" alt="Project Demo"/>
+    <img src="screenshots/grafana-cart.png" width="700" alt="grafana-cart.png"/>
   </a>
 </p>
 
 <p align="center">
-    <img src="screenshots/grafana-payment" width="700" alt="Project Demo"/>
+    <img src="screenshots/grafana-payment.png" width="700" alt="grafana-payment.png"/>
   </a>
 </p>
 
 
 ### Chaos Engineering — Pod Self-Healing
 <p align="center">
-    <img src="screenshots/grafana-chaos-engineering.png" width="700" alt="Project Demo"/>
+    <img src="screenshots/grafana-chaos-engineering.png" width="700" alt="grafana-chaos-engineering.png"/>
   </a>
 </p>
 
 
 ### GitHub Actions CI/CD Pipeline
 <p align="center">
-    <img src="screenshots/github-actions-pipeline.png" width="700" alt="Project Demo"/>
+    <img src="screenshots/github-actions-pipeline.png" width="700" alt="github-actions-pipeline.png"/>
   </a>
 </p>
 
