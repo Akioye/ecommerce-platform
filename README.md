@@ -1,7 +1,6 @@
 # Self-Healing E-Commerce Platform
 
-A production-grade microservices application with self-healing 
-infrastructure on AWS EKS.
+A microservices e-commerce app (cart, payment, inventory) deployed on EKS with full chaos engineering pods are intentionally killed and Kubernetes self-healing is demonstrated live on a Grafana dashboard
 
 ## Demo Video
 
