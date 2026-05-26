@@ -44,11 +44,23 @@ This platform demonstrates Kubernetes self-healing in real time.
   </a>
 </p>
 
-![Cart Service](screenshots/grafana-cart.png)
-![Payment Service](screenshots/grafana-payment.png)
+<p align="center">
+    <img src="screenshots/grafana-cart.png" width="700" alt="Project Demo"/>
+  </a>
+</p>
+
+<p align="center">
+    <img src="screenshots/grafana-payment" width="700" alt="Project Demo"/>
+  </a>
+</p>
+
 
 ### Chaos Engineering — Pod Self-Healing
-![Chaos Engineering](screenshots/grafana-chaos-engineering.png)
+<p align="center">
+    <img src="screenshots/grafana-chaos-engineering.png" width="700" alt="Project Demo"/>
+  </a>
+</p>
+
 
 ### GitHub Actions CI/CD Pipeline
 ![CI/CD Pipeline](screenshots/github-actions-pipeline.png)
