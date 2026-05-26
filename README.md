@@ -185,7 +185,7 @@ changed how I think about distributed systems.
 
 **Infrastructure as code changes how you think about cloud.** 
 Writing Terraform taught me that every AWS resource has 
-dependencies — a NAT Gateway needs an Elastic IP, private 
+dependencies, a NAT Gateway needs an Elastic IP, private 
 subnets need route tables, EKS nodes need specific IAM 
 policies. Missing one breaks everything. I learned this 
 the hard way when nodes failed to join the cluster because 
@@ -193,7 +193,7 @@ I had no NAT Gateway.
 
 **Helm charts are Kubernetes templates, not magic.** 
 Writing them from scratch showed me exactly what 
-Kubernetes needs to run a service — a Deployment to 
+Kubernetes needs to run a service, a Deployment to 
 manage pods and a Service to give them a stable network 
 address. Once I understood that, the templating made 
 complete sense.
@@ -202,7 +202,7 @@ complete sense.
 Prometheus collects and stores metrics. Grafana just 
 reads from Prometheus and draws charts. Understanding 
 the separation helped me debug why dashboards weren't 
-showing data — it was a Prometheus scraping issue, 
+showing data, it was a Prometheus scraping issue, 
 not a Grafana issue.
 
 **Debugging distributed systems requires different thinking.** 
@@ -244,7 +244,3 @@ upstream rather than fixing symptoms.
   </a>
 </p>
 
-
-
-terraform destroy
-```
