@@ -5,7 +5,11 @@ infrastructure on AWS EKS.
 
 
 ## Architecture Diagram
-
+<p align="center">
+  <a href="https://vimeo.com/1195453321?share=copy">
+    <img src="self-healing-project-architecture.png" width="700" alt="Project Demo"/>
+  </a>
+</p>
 ![Architecture](self-healing-project-architecture.png)
 
 ## Tech Stack
