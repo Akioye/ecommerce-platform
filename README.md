@@ -63,7 +63,11 @@ This platform demonstrates Kubernetes self-healing in real time.
 
 
 ### GitHub Actions CI/CD Pipeline
-![CI/CD Pipeline](screenshots/github-actions-pipeline.png)
+<p align="center">
+    <img src="screenshots/github-actions-pipeline.png" width="700" alt="Project Demo"/>
+  </a>
+</p>
+
 
 ## Demo Video
 
