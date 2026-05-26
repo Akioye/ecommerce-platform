@@ -10,7 +10,7 @@ infrastructure on AWS EKS.
   </a>
 </p>
 
-![Architecture](self-healing-project-architecture.png)
+
 
 ## Tech Stack
 
@@ -39,7 +39,11 @@ This platform demonstrates Kubernetes self-healing in real time.
 ## Screenshots
 
 ### Grafana Live Monitoring
-![Inventory Service](screenshots/grafana-inventory.png)
+<p align="center">
+    <img src="screenshots/grafana-inventory.png" width="700" alt="Project Demo"/>
+  </a>
+</p>
+
 ![Cart Service](screenshots/grafana-cart.png)
 ![Payment Service](screenshots/grafana-payment.png)
 
