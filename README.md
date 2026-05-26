@@ -10,7 +10,7 @@ infrastructure on AWS EKS.
       src="click.png"
       width="700"
       alt="Project Demo"
-      style="border-radius: 16px;"
+      style="border-radius:16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
     />
   </a>
 </p>
