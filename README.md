@@ -2,18 +2,7 @@
 
 A production-grade microservices application with self-healing 
 infrastructure on AWS EKS.
-## Demo Video
 
-<p align="center">
-  <a href="https://vimeo.com/1195453321?share=copy">
-    <img 
-      src="click.png"
-      width="580"
-      alt="Project Demo"
-      style="border-radius:16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
-    />
-  </a>
-</p>
 
 ## Architecture Diagram
 
@@ -55,6 +44,19 @@ This platform demonstrates Kubernetes self-healing in real time.
 
 ### GitHub Actions CI/CD Pipeline
 ![CI/CD Pipeline](screenshots/github-actions-pipeline.png)
+
+## Demo Video
+
+<p align="center">
+  <a href="https://vimeo.com/1195453321?share=copy">
+    <img 
+      src="click.png"
+      width="580"
+      alt="Project Demo"
+      style="border-radius:16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
+    />
+  </a>
+</p>
 
 ## Infrastructure
 AWS Infrastructure
