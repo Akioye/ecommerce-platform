@@ -4,11 +4,14 @@ A production-grade microservices application with self-healing
 infrastructure on AWS EKS.
 ## Demo Video
 
-<h2>Demo Video</h2>
-
 <p align="center">
   <a href="https://vimeo.com/1195453321?share=copy">
-    <img src="click.png" width="700" alt="Project Demo"/>
+    <img 
+      src="click.png"
+      width="700"
+      alt="Project Demo"
+      style="border-radius: 16px;"
+    />
   </a>
 </p>
 
