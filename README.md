@@ -4,7 +4,8 @@ A production-grade microservices application with self-healing
 infrastructure on AWS EKS.
 ## Demo Video
 
-[![Watch the demo](https://i.vimeocdn.com/video/placeholder.jpg)](https://vimeo.com/1195453321?share=copy)
+[![Project Demo](click.png)](https://vimeo.com/1195453321?share=copy)
+
 ## Architecture Diagram
 
 ![Architecture](self-healing-project-architecture.png)
