@@ -8,7 +8,7 @@ infrastructure on AWS EKS.
   <a href="https://vimeo.com/1195453321?share=copy">
     <img 
       src="click.png"
-      width="700"
+      width="500"
       alt="Project Demo"
       style="border-radius:16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
     />
